@@ -11,7 +11,7 @@ Showcases my projects, experience timeline, and a contact form.
 - Experience timeline layout
 - Contact form integrated with **Web3Forms**
 - Responsive design for mobile/tablet/desktop
-- “Back to top” button (optional)
+- “Back to top” button
 
 ## Tech Stack
 - **HTML5**
