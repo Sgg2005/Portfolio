@@ -1,4 +1,4 @@
-# Simon Girma — Portfolio Website
+# Simon Girma Portfolio Website
 
 A modern, responsive personal portfolio built with **HTML**, **CSS**, and **JavaScript**.  
 Showcases my projects, experience timeline, and a contact form.
