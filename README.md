@@ -3,9 +3,6 @@
 A modern, responsive personal portfolio built with **HTML**, **CSS**, and **JavaScript**.  
 Showcases my projects, experience timeline, and a contact form.
 
-## Live Demo
-- Add your GitHub Pages link here: **https://<your-username>.github.io/<repo-name>/**
-
 ## Features
 - Smooth scrolling navigation
 - Sticky navbar with scroll effect
