@@ -310,13 +310,13 @@ toggleBackToTop();
             return width + marginRight + 30; // 30px is the gap
         }
         
-        // Update carousel position
+        // Update carousel position - SHOWS ONE CARD AT A TIME
         function updateCarousel() {
             const cardWidth = getCardWidth();
             const offset = -(currentIndex * cardWidth);
             wrapper.style.transform = `translateX(${offset}px)`;
             
-            // Update dots
+            // Update dots - only one active at a time
             dots.forEach((dot, index) => {
                 dot.classList.toggle('active', index === currentIndex);
             });
@@ -335,9 +335,9 @@ toggleBackToTop();
             updateCarousel();
         }
         
-        // Start auto-scroll
+        // Start auto-scroll - 4 SECONDS
         function startAutoScroll() {
-            autoScrollInterval = setInterval(nextSlide, 3000); // 3 seconds
+            autoScrollInterval = setInterval(nextSlide, 4000); // 4 seconds
         }
         
         // Reset auto-scroll
