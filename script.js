@@ -4,18 +4,18 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-// ==========================================
-// BACK TO TOP BUTTON
-// ==========================================
-const backToTop = document.getElementById('backToTop');
+    // ==========================================
+    // BACK TO TOP BUTTON
+    // ==========================================
+    const backToTop = document.getElementById('backToTop');
 
-function toggleBackToTop() {
-    if (!backToTop) return;
-    backToTop.classList.toggle('show', window.scrollY > 500);
-}
+    function toggleBackToTop() {
+        if (!backToTop) return;
+        backToTop.classList.toggle('show', window.scrollY > 500);
+    }
 
-window.addEventListener('scroll', toggleBackToTop);
-toggleBackToTop();
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
     
     // ==========================================
     // NAVBAR SCROLL EFFECT
@@ -33,21 +33,73 @@ toggleBackToTop();
     
     
     // ==========================================
+    // MOBILE NAV MENU
+    // ==========================================
+    
+    const navToggle = document.getElementById('navToggle');
+    const navOverlay = document.getElementById('navOverlay');
+    const navLinksContainer = document.getElementById('navLinks');
+
+    // Close menu function
+    function closeNav() {
+        document.body.classList.remove('nav-open');
+        if (navToggle) {
+            navToggle.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    // Open menu function
+    function openNav() {
+        document.body.classList.add('nav-open');
+        if (navToggle) {
+            navToggle.setAttribute('aria-expanded', 'true');
+        }
+    }
+
+    // Toggle button click
+    if (navToggle) {
+        navToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            const isOpen = document.body.classList.contains('nav-open');
+            isOpen ? closeNav() : openNav();
+        });
+    }
+
+    // Overlay click to close
+    if (navOverlay) {
+        navOverlay.addEventListener('click', closeNav);
+    }
+
+    // Escape key to close
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeNav();
+    });
+    
+    
+    // ==========================================
     // SMOOTH SCROLL FOR NAVIGATION LINKS
     // ==========================================
     
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    navLinks.forEach(link => {
+    const allNavLinks = document.querySelectorAll('.nav-link');
+
+    allNavLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
+            
+            const href = this.getAttribute('href');
+            const targetId = href.replace('#', '');
             const targetSection = document.getElementById(targetId);
             
-            targetSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
+            if (targetSection) {
+                // Scroll FIRST
+                targetSection.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+                
+                // Close menu after a tiny delay
+                setTimeout(closeNav, 50);
+            }
         });
     });
     
@@ -55,7 +107,6 @@ toggleBackToTop();
     // ==========================================
     // FADE-IN ANIMATION ON SCROLL
     // ==========================================
-    
     const sections = document.querySelectorAll('section');
     
     const observerOptions = {
@@ -392,62 +443,3 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
-
-// Back to top button functionality
-const backToTopBtn = document.getElementById('backToTop');
-
-// Show/hide button based on scroll position
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 300) {
-    backToTopBtn.classList.add('show');
-  } else {
-    backToTopBtn.classList.remove('show');
-  }
-});
-
-// Smooth scroll to top when clicked
-backToTopBtn.addEventListener('click', () => {
-  window.scrollTo({
-    top: 0,
-    behavior: 'smooth'
-  });
-});
-
-const navToggle = document.getElementById('navToggle');
-const navOverlay = document.getElementById('navOverlay');
-const navLinks = document.getElementById('navLinks');
-
-function openNav() {
-  document.body.classList.add('nav-open');
-  navToggle.setAttribute('aria-expanded', 'true');
-}
-
-function closeNav() {
-  document.body.classList.remove('nav-open');
-  navToggle.setAttribute('aria-expanded', 'false');
-}
-
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    const isOpen = document.body.classList.contains('nav-open');
-    isOpen ? closeNav() : openNav();
-  });
-}
-
-if (navOverlay) {
-  navOverlay.addEventListener('click', closeNav);
-}
-
-/* Close after clicking a nav link (mobile) */
-if (navLinks) {
-  navLinks.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => {
-      closeNav();
-    });
-  });
-}
-
-/* Optional: close on Escape */
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeNav();
-});

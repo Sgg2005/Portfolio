@@ -848,7 +848,10 @@ body {
     .hero-buttons { flex-direction: column; }
     .about-content { grid-template-columns: 1fr; }
     .contact-layout { grid-template-columns: 1fr; }
-    .nav-links { display: none; }
+
+    /* CHANGED: removed this because it breaks the hamburger menu
+       .nav-links { display: none; }
+    */
     .section-title { font-size: 2rem; }
 
     /* Timeline Mobile Styles */
@@ -872,6 +875,7 @@ body {
     .project-image { height: 180px; }
     .github-link { width: 40px; height: 40px; }
 }
+
 /* ==========================================
    BACK TO TOP BUTTON
    ========================================== */
@@ -956,10 +960,10 @@ body {
 .nav-toggle span {
   display: block;
   width: 100%;
-  height: 3px;              
+  height: 3px;
   background: #ffffff;
   border-radius: 999px;
-  margin: 7px 0;              
+  margin: 7px 0;
 }
 
 /* Overlay behind the menu */
@@ -981,14 +985,11 @@ body {
 }
 
 /* Mobile menu panel (we reuse your ul.nav-links) */
-@media (max-width: 768px) {
+@media (max-width: 520px) {
   .nav-toggle {
     display: block;
-    align-items: center;
-    justify-content: center;
   }
 
-  /* Hide normal inline links */
   .nav-links {
     position: fixed;
     top: 90px;              /* below navbar */
@@ -996,28 +997,24 @@ body {
     width: min(320px, 85vw);
     padding: 18px;
     border-radius: 18px;
-    display: flex;          /* keep flex */
-    flex-direction: column; /* vertical */
+
+    display: flex;
+    flex-direction: column;
     gap: 16px;
-    background:#1e293b;
-    backdrop-filter: none;
+
+    background: #1e293b; /* solid (no transparency) */
     border: 1px solid rgba(167, 139, 250, 0.25);
     box-shadow: 0 20px 60px rgba(0,0,0,0.35);
+
     transform: translateY(-10px);
     opacity: 0;
     visibility: hidden;
     transition: transform 0.25s ease, opacity 0.25s ease, visibility 0.25s ease;
-    z-index: 2001; /* above overlay */
+    z-index: 2001;
   }
 
-  /* When menu is open */
   .nav-open .nav-links {
     transform: translateY(0);
-    opacity: 1;
-    visibility: visible;
-  }
-
-  .nav-open .nav-overlay {
     opacity: 1;
     visibility: visible;
   }
@@ -1032,4 +1029,15 @@ body {
   .nav-open .nav-toggle span:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
   }
+}
+
+/* ==========================================
+   SCROLL MARGIN FOR ANCHORED SECTIONS
+   ========================================== */
+:root {
+  --nav-offset: 110px; 
+}
+
+#home, #about, #projects, #experience, #contact {
+  scroll-margin-top: var(--nav-offset);
 }
