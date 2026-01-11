@@ -10,20 +10,30 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <!-- Logo/Name -->
-            <h1 class="logo">Simon Girma</h1>
+    <div class="nav-container">
+        <!-- Logo/Name -->
+        <h1 class="logo">Simon Girma | Student Developer</h1>
 
-            <!-- Navigation Links -->
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#experience" class="nav-link">Work experience</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Work experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <!-- Hamburger Button -->
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+        </button>
+    </div>
     </nav>
+
+    <!-- Overlay (outside nav) -->
+    <div class="nav-overlay" id="navOverlay"></div>
 
     <!-- Hero/Home Section -->
     <section id="home" class="hero">

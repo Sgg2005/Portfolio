@@ -412,3 +412,42 @@ backToTopBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+const navToggle = document.getElementById('navToggle');
+const navOverlay = document.getElementById('navOverlay');
+const navLinks = document.getElementById('navLinks');
+
+function openNav() {
+  document.body.classList.add('nav-open');
+  navToggle.setAttribute('aria-expanded', 'true');
+}
+
+function closeNav() {
+  document.body.classList.remove('nav-open');
+  navToggle.setAttribute('aria-expanded', 'false');
+}
+
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    const isOpen = document.body.classList.contains('nav-open');
+    isOpen ? closeNav() : openNav();
+  });
+}
+
+if (navOverlay) {
+  navOverlay.addEventListener('click', closeNav);
+}
+
+/* Close after clicking a nav link (mobile) */
+if (navLinks) {
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      closeNav();
+    });
+  });
+}
+
+/* Optional: close on Escape */
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') closeNav();
+});
