@@ -1,509 +1,509 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simon Girma | Student Developer</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22
-    ><text y=%22.9em%22 x=%2210%22 font-size=%2290%22 font-weight=%22900%22 fill=%22white%22>S</text></svg>">
-    <!-- Link to external CSS file -->
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation Bar -->
-    <nav class="navbar" id="navbar">
-    <div class="nav-container">
-        <!-- Logo/Name -->
-        <h1 class="logo">Simon Girma | Student Developer</h1>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simon Girma | Student Developer</title>
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22
+        ><text y=%22.9em%22 x=%2210%22 font-size=%2290%22 font-weight=%22900%22 fill=%22white%22>S</text></svg>">
+        <!-- Link to external CSS file -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Logo/Name -->
+            <h1 class="logo">Simon Girma<span class="logo-subtitle"> | Student Developer</span></h1>
 
-        <!-- Navigation Links -->
-        <ul class="nav-links" id="navLinks">
-        <li><a href="#home" class="nav-link">Home</a></li>
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#experience" class="nav-link">Work experience</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Work experience</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
-        <!-- Hamburger Button -->
-        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-        </button>
-    </div>
-    </nav>
-
-    <!-- Overlay (outside nav) -->
-    <div class="nav-overlay" id="navOverlay"></div>
-
-    <!-- Hero/Home Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <!-- Welcome Badge -->
-            <div class="welcome-badge">👋 Welcome to my portfolio</div>
-
-            <!-- Main Heading -->
-            <h1 class="hero-title">
-                Hi, I'm <span class="gradient-text">Simon Girma</span>
-            </h1>
-
-            <!-- Subtitle -->
-            <p class="hero-subtitle">Web developer | Creative Problem Solver</p>
-
-            <!-- Description -->
-            <p class="hero-description">
-                I build digital experiences that combine modern design with effective functionality.
-                My goal is to create applications that look great and work smoothly for users.
-            </p>
-
-            <!-- Call-to-Action Buttons -->
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
-
-            <!-- Social Media Icons -->
-            <div class="social-links">
-                <a href="https://github.com/Sgg2005" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                    </svg>
-                </a>
-                <a href="https://www.linkedin.com/in/simon-girma/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                </a>
-                <a href="mailto:girmasimon95@gmail.com" class="social-icon" aria-label="Email">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                        <polyline points="22,6 12,13 2,6"></polyline>
-                    </svg>
-                </a>
-            </div>
+            <!-- Hamburger Button -->
+            <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+            </button>
         </div>
-    </section>
+        </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <div class="container">
+        <!-- Overlay (outside nav) -->
+        <div class="nav-overlay" id="navOverlay"></div>
 
-        <!-- Section Title -->
-        <h2 class="section-title">
-          About <span class="gradient-text">Me</span>
-        </h2>
+        <!-- Hero/Home Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <!-- Welcome Badge -->
+                <div class="welcome-badge">👋 Welcome to my portfolio</div>
 
-        <div class="about-content">
-          <!-- Left Side: Description -->
-          <div class="about-text">
-            <p class="about-paragraph">
-              I’m an undergraduate at Heriot-Watt University Dubai pursuing a BSc (Hons) in Computer Science (AI). I’m
-              especially interested in Artificial Intelligence, web development, and technology-driven problem solving.
-            </p>
+                <!-- Main Heading -->
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">Simon Girma</span>
+                </h1>
 
-            <p class="about-paragraph">
-              I’ve completed internships at CTG and LonAdd HR, where I improved data administration and recruitment workflows
-              through automation and strong attention to detail. Skilled in Python, Java, C, HTML, CSS, and JavaScript, I’m
-              working toward becoming a full stack developer and contributing to impactful projects at the intersection of AI,
-              business, and technology.
-            </p>
+                <!-- Subtitle -->
+                <p class="hero-subtitle">Web developer | Creative Problem Solver</p>
 
-            <!-- Quick stats -->
-            <div class="about-stats">
-              <span class="about-stat">🎓 BSc (Hons) CS (AI) — Heriot‑Watt Dubai</span>
-              <span class="about-stat">🧠 Interests: AI • Web Dev • Automation</span>
-              <span class="about-stat">🚀 Goal: Full‑Stack Developer</span>
-            </div>
-          </div>
+                <!-- Description -->
+                <p class="hero-description">
+                    I build digital experiences that combine modern design with effective functionality.
+                    My goal is to create applications that look great and work smoothly for users.
+                </p>
 
-          <!-- Right Side: Skills Box -->
-          <div class="skills-box">
-            <h3 class="skills-title">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                <polyline points="16 18 22 12 16 6"></polyline>
-                <polyline points="8 6 2 12 8 18"></polyline>
-              </svg>
-              Skills &amp; Technologies
-            </h3>
-
-            <!-- Skills Tags -->
-            <div class="skills-grid">
-              <span class="skill-tag">Python</span>
-              <span class="skill-tag">Java</span>
-              <span class="skill-tag">JavaScript</span>
-              <span class="skill-tag">C</span>
-              <span class="skill-tag">HTML</span>
-              <span class="skill-tag">CSS</span>
-              <span class="skill-tag">Low-level Debugging</span>
-              <span class="skill-tag">Microsoft Excel</span>
-              <span class="skill-tag">Teamwork</span>
-              <span class="skill-tag">Communication</span>
-              <span class="skill-tag">Leadership</span>
-              <span class="skill-tag">Quick Learning</span>
-              <span class="skill-tag">Attention to Detail</span>
-              <span class="skill-tag">Organizational Skills</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Projects Section - CAROUSEL VERSION -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <!-- Section Title -->
-            <h2 class="section-title">
-                Featured <span class="gradient-text">Projects</span>
-            </h2>
-
-            <!-- Short intro paragraph -->
-            <p class="section-description">
-                Here are a few projects I’ve built across different languages and problem domains,
-                from Java applications and C-based image processing to interactive web apps made
-                with JavaScript and React. Each one helped me practice clean structure, debugging,
-                and building features that solve a clear, real use-case.
-            </p>
-
-            <!-- Carousel Container -->
-            <div class="carousel-container">
-                <div class="carousel-wrapper" id="carouselWrapper">
-
-                    <!-- Project Card 1 -->
-                    <div class="project-card">
-                        <a href="https://github.com/Sgg2005/Truck-Loader-Database" target="_blank" rel="noopener noreferrer" class="github-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <div class="project-image">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5">
-                                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                            </svg>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Truck Loader Database</h3>
-                            <p class="project-description">
-                                A Java application that stores and manages truck box records using arrays,
-                                user input, and clear conditional logic. It focuses on organizing logistics
-                                data efficiently, validating entries, and keeping the workflow simple for
-                                the user through structured menus and readable outputs.
-                            </p>
-                            <div class="project-tags">
-                                <span class="project-tag">Java</span>
-                                <span class="project-tag">Data Structures</span>
-                                <span class="project-tag">Arrays</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 2 -->
-                    <div class="project-card">
-                        <a href="https://github.com/Sgg2005/GUI-Hangman-game" target="_blank" rel="noopener noreferrer" class="github-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <div class="project-image">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="9" y1="9" x2="15" y2="15"></line>
-                                <line x1="15" y1="9" x2="9" y2="15"></line>
-                            </svg>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">GUI Hangman Game</h3>
-                            <p class="project-description">
-                                An interactive Hangman game built in Java using Swing for the interface.
-                                It includes word-guessing mechanics, visual feedback for correct/incorrect
-                                guesses, and a limited attempts system that makes the gameplay feel clear,
-                                responsive, and easy to follow from start to finish.
-                            </p>
-                            <div class="project-tags">
-                                <span class="project-tag">Java</span>
-                                <span class="project-tag">Swing</span>
-                                <span class="project-tag">GUI</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 3 -->
-                    <div class="project-card">
-                        <a href="https://github.com/Sgg2005/Image-Processing-in-C" target="_blank" rel="noopener noreferrer" class="github-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <div class="project-image">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                                <polyline points="21 15 16 10 5 21"></polyline>
-                            </svg>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Image Processing in C</h3>
-                            <p class="project-description">
-                                A C-based image processor that reads custom HP8 format files and applies
-                                effects like median filtering and noise transformations. It also generates
-                                histograms, with a strong focus on memory safety, efficient loops, and
-                                clear function design for maintainable low-level code.
-                            </p>
-                            <div class="project-tags">
-                                <span class="project-tag">C</span>
-                                <span class="project-tag">Image Processing</span>
-                                <span class="project-tag">Algorithms</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 4 -->
-                    <div class="project-card">
-                        <a href="https://github.com/Sgg2005/React-Wordle" target="_blank" rel="noopener noreferrer" class="github-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <div class="project-image">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5">
-                                <rect x="2" y="2" width="20" height="20" rx="2" ry="2"></rect>
-                                <path d="M7 7h.01M7 12h.01M7 17h.01M12 7h.01M12 12h.01M12 17h.01M17 7h.01M17 12h.01M17 17h.01"></path>
-                            </svg>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">React Wordle</h3>
-                            <p class="project-description">
-                                A Wordle-style word guessing game built with React and modern JavaScript.
-                                It supports real-time letter feedback, keyboard input handling, and clean
-                                state management for rounds, guesses, and validation. The UI is responsive
-                                and designed to feel smooth and familiar on desktop and mobile.
-                            </p>
-                            <div class="project-tags">
-                                <span class="project-tag">React</span>
-                                <span class="project-tag">JavaScript</span>
-                                <span class="project-tag">CSS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project Card 5 -->
-                    <div class="project-card">
-                        <a href="https://github.com/Sgg2005/Master-Mind" target="_blank" rel="noopener noreferrer" class="github-link">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <div class="project-image">
-                            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5">
-                                <circle cx="12" cy="12" r="10"></circle>
-                                <circle cx="12" cy="8" r="2"></circle>
-                                <circle cx="12" cy="16" r="2"></circle>
-                                <circle cx="8" cy="12" r="2"></circle>
-                                <circle cx="16" cy="12" r="2"></circle>
-                            </svg>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Master Mind Game</h3>
-                            <p class="project-description">
-                                A classic code-breaking game that focuses on pattern recognition and logic.
-                                Players make strategic guesses to deduce the hidden color sequence, then use
-                                feedback to narrow down possibilities. This project emphasizes game rules,
-                                UI clarity, and clean win/lose handling.
-                            </p>
-                            <div class="project-tags">
-                                <span class="project-tag">JavaScript</span>
-                                <span class="project-tag">Game Logic</span>
-                                <span class="project-tag">UI/UX</span>
-                            </div>
-                        </div>
-                    </div>
+                <!-- Call-to-Action Buttons -->
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
                 </div>
 
-                <!-- Navigation Dots -->
-                <div class="carousel-dots" id="carouselDots"></div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <!-- Section Title -->
-            <h2 class="section-title">
-                Experience <span class="gradient-text">Timeline</span>
-            </h2>
-
-            <div class="experience-layout">
-                <!-- Timeline -->
-                <div class="timeline">
-                    <!-- Timeline Item 1 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                                <line x1="8" y1="21" x2="16" y2="21"></line>
-                                <line x1="12" y1="17" x2="12" y2="21"></line>
-                            </svg>
-                        </div>
-                        <div class="timeline-date">Dec 2025 — Present</div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Web Developer</h3>
-                            <div class="timeline-company">The Student Dorm</div>
-                            <p class="timeline-description">
-                            Currently a web developer full time at The Student Dorm, 
-                            working on building and maintaining web applications to enhance user experience and streamline operations.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 2 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"></polyline>
-                                <polyline points="8 6 2 12 8 18"></polyline>
-                            </svg>
-                        </div>
-                        <div class="timeline-date">Oct 2025 — Dec 2025</div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Technical Intern</h3>
-                            <div class="timeline-company">The Student Dorm</div>
-                            <p class="timeline-description">
-                            As a Frontend Developer at The Student Dorm, 
-                            I built and maintained responsive web applications while optimizing site performance. 
-                            I focused on implementing technical solutions, resolving frontend bugs, and executing code updates based on feedback to streamline operations and enhance the user experience.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 3 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
-                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
-                            </svg>
-                        </div>
-                        <div class="timeline-date">Jul 2023 — Sep 2023</div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Data Administrator Internship</h3>
-                            <div class="timeline-company">CTG</div>
-                            <p class="timeline-description">
-                                Organized high volumes of customer documents using clear naming conventions and folder structures. 
-                                Corrected inconsistencies to keep client records accurate and up to date. 
-                                Used Microsoft Excel to automate repetitive tasks and streamline daily workflows.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- Timeline Item 4 -->
-                    <div class="timeline-item">
-                        <div class="timeline-marker">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <rect x="2" y="7" width="20" height="14" rx="2"></rect>
-                                <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
-                            </svg>
-                        </div>
-                        <div class="timeline-date">Jun 2023 — Jul 2023</div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Recruiter Intern</h3>
-                            <div class="timeline-company">LonAdd HR Consultants</div>
-                            <p class="timeline-description">
-                                Sorted and categorized candidate CVs to speed up shortlisting.
-                                Maintained a digital filing system to improve recruiter access to profiles.
-                                Ensured accurate, consistent records while handling high-volume applicant data.
-                                Supported day-to-day recruitment workflows with strong organization and attention to detail.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- CV Side Panel -->
-                <aside class="cv-side">
-                    <h3 class="cv-side-title">View My CV</h3>
-                    <p class="cv-side-text">
-                        If you want to have a look at my CV for more, click the button below.
-                    </p>
-                    <!-- Update href to your real PDF location -->
-                    <a class="btn btn-primary" href="Images\CV.pdf" target="_blank" rel="noopener noreferrer">
-                        View CV
+                <!-- Social Media Icons -->
+                <div class="social-links">
+                    <a href="https://github.com/Sgg2005" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
                     </a>
-                </aside>
+                    <a href="https://www.linkedin.com/in/simon-girma/" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:girmasimon95@gmail.com" class="social-icon" aria-label="Email">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+        <!-- About Section -->
+        <section id="about" class="about">
         <div class="container">
+
             <!-- Section Title -->
             <h2 class="section-title">
-                Let's <span class="gradient-text">Connect</span>
+            About <span class="gradient-text">Me</span>
             </h2>
 
-            <!-- Description -->
-            <p class="contact-description">
-                I'm always open to discussing new projects and opportunities.
-            </p>
+            <div class="about-content">
+            <!-- Left Side: Description -->
+            <div class="about-text">
+                <p class="about-paragraph">
+                I’m an undergraduate at Heriot-Watt University Dubai pursuing a BSc (Hons) in Computer Science (AI). I’m
+                especially interested in Artificial Intelligence, web development, and technology-driven problem solving.
+                </p>
 
-            <!-- Contact Layout (Two Columns) -->
-            <div class="contact-layout">
-                <!-- Left Side: Contact Info -->
-                <div class="contact-info">
-                    <h3 class="contact-info-title">Get In Touch</h3>
-                    <p class="contact-info-text">
-                        Feel free to reach out for collaborations or just a friendly hello.
-                    </p>
+                <p class="about-paragraph">
+                I’ve completed internships at CTG and LonAdd HR, where I improved data administration and recruitment workflows
+                through automation and strong attention to detail. Skilled in Python, Java, C, HTML, CSS, and JavaScript, I’m
+                working toward becoming a full stack developer and contributing to impactful projects at the intersection of AI,
+                business, and technology.
+                </p>
 
-                    <div class="contact-detail">
-                        <a class="contact-link" href="mailto:girmasimon95@gmail.com">girmasimon95@gmail.com</a>
-                    </div>
-
-                    <div class="contact-detail">
-                        <a class="contact-link" href="https://github.com/Sgg2005" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    </div>
-
-                    <div class="contact-detail">
-                        <a class="contact-link" href="https://www.linkedin.com/in/simon-girma/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    </div>
-                </div>
-
-                <!-- Right Side: Contact Form -->
-                <div class="contact-form-container">
-                    <form class="contact-form" id="contactForm">
-                        <input type="text" name="name" id="contactName" placeholder="Name" class="form-input" required />
-                        <input type="email" name="email" id="contactEmail" placeholder="Email" class="form-input" required />
-                        <textarea name="message" id="contactMessage" placeholder="Message" class="form-textarea" rows="6" required></textarea>
-
-                        <p id="formStatusSuccess" class="form-status success" hidden>
-                            Message sent successfully!
-                        </p>
-                        <p id="formStatusError" class="form-status error" hidden>
-                            Something went wrong. Please try again.
-                        </p>
-
-                        <button type="submit" class="btn btn-primary btn-full">
-                            Send Message
-                        </button>
-                    </form>
+                <!-- Quick stats -->
+                <div class="about-stats">
+                <span class="about-stat">🎓 BSc (Hons) CS (AI) — Heriot‑Watt Dubai</span>
+                <span class="about-stat">🧠 Interests: AI • Web Dev • Automation</span>
+                <span class="about-stat">🚀 Goal: Full‑Stack Developer</span>
                 </div>
             </div>
+
+            <!-- Right Side: Skills Box -->
+            <div class="skills-box">
+                <h3 class="skills-title">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                Skills &amp; Technologies
+                </h3>
+
+                <!-- Skills Tags -->
+                <div class="skills-grid">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Low-level Debugging</span>
+                <span class="skill-tag">Microsoft Excel</span>
+                <span class="skill-tag">Teamwork</span>
+                <span class="skill-tag">Communication</span>
+                <span class="skill-tag">Leadership</span>
+                <span class="skill-tag">Quick Learning</span>
+                <span class="skill-tag">Attention to Detail</span>
+                <span class="skill-tag">Organizational Skills</span>
+                </div>
+            </div>
+            </div>
         </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>© 2026 Simon Getachew Girma</p>
-    </footer>
+        <!-- Projects Section - CAROUSEL VERSION -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title">
+                    Featured <span class="gradient-text">Projects</span>
+                </h2>
 
-    <!-- Arrow Back to home -->
-    <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+                <!-- Short intro paragraph -->
+                <p class="section-description">
+                    Here are a few projects I’ve built across different languages and problem domains,
+                    from Java applications and C-based image processing to interactive web apps made
+                    with JavaScript and React. Each one helped me practice clean structure, debugging,
+                    and building features that solve a clear, real use-case.
+                </p>
 
-    <!-- Link to external JavaScript file -->
-    <script src="script.js"></script>
-    
-</body>
-</html>
+                <!-- Carousel Container -->
+                <div class="carousel-container">
+                    <div class="carousel-wrapper" id="carouselWrapper">
+
+                        <!-- Project Card 1 -->
+                        <div class="project-card">
+                            <a href="https://github.com/Sgg2005/Truck-Loader-Database" target="_blank" rel="noopener noreferrer" class="github-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <div class="project-image">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5">
+                                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                                </svg>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Truck Loader Database</h3>
+                                <p class="project-description">
+                                    A Java application that stores and manages truck box records using arrays,
+                                    user input, and clear conditional logic. It focuses on organizing logistics
+                                    data efficiently, validating entries, and keeping the workflow simple for
+                                    the user through structured menus and readable outputs.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Java</span>
+                                    <span class="project-tag">Data Structures</span>
+                                    <span class="project-tag">Arrays</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 2 -->
+                        <div class="project-card">
+                            <a href="https://github.com/Sgg2005/GUI-Hangman-game" target="_blank" rel="noopener noreferrer" class="github-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <div class="project-image">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="9" y1="9" x2="15" y2="15"></line>
+                                    <line x1="15" y1="9" x2="9" y2="15"></line>
+                                </svg>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">GUI Hangman Game</h3>
+                                <p class="project-description">
+                                    An interactive Hangman game built in Java using Swing for the interface.
+                                    It includes word-guessing mechanics, visual feedback for correct/incorrect
+                                    guesses, and a limited attempts system that makes the gameplay feel clear,
+                                    responsive, and easy to follow from start to finish.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">Java</span>
+                                    <span class="project-tag">Swing</span>
+                                    <span class="project-tag">GUI</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 3 -->
+                        <div class="project-card">
+                            <a href="https://github.com/Sgg2005/Image-Processing-in-C" target="_blank" rel="noopener noreferrer" class="github-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <div class="project-image">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5">
+                                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                                    <polyline points="21 15 16 10 5 21"></polyline>
+                                </svg>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Image Processing in C</h3>
+                                <p class="project-description">
+                                    A C-based image processor that reads custom HP8 format files and applies
+                                    effects like median filtering and noise transformations. It also generates
+                                    histograms, with a strong focus on memory safety, efficient loops, and
+                                    clear function design for maintainable low-level code.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">C</span>
+                                    <span class="project-tag">Image Processing</span>
+                                    <span class="project-tag">Algorithms</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 4 -->
+                        <div class="project-card">
+                            <a href="https://github.com/Sgg2005/React-Wordle" target="_blank" rel="noopener noreferrer" class="github-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <div class="project-image">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5">
+                                    <rect x="2" y="2" width="20" height="20" rx="2" ry="2"></rect>
+                                    <path d="M7 7h.01M7 12h.01M7 17h.01M12 7h.01M12 12h.01M12 17h.01M17 7h.01M17 12h.01M17 17h.01"></path>
+                                </svg>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">React Wordle</h3>
+                                <p class="project-description">
+                                    A Wordle-style word guessing game built with React and modern JavaScript.
+                                    It supports real-time letter feedback, keyboard input handling, and clean
+                                    state management for rounds, guesses, and validation. The UI is responsive
+                                    and designed to feel smooth and familiar on desktop and mobile.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">React</span>
+                                    <span class="project-tag">JavaScript</span>
+                                    <span class="project-tag">CSS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project Card 5 -->
+                        <div class="project-card">
+                            <a href="https://github.com/Sgg2005/Master-Mind" target="_blank" rel="noopener noreferrer" class="github-link">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <div class="project-image">
+                                <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="1.5">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <circle cx="12" cy="8" r="2"></circle>
+                                    <circle cx="12" cy="16" r="2"></circle>
+                                    <circle cx="8" cy="12" r="2"></circle>
+                                    <circle cx="16" cy="12" r="2"></circle>
+                                </svg>
+                            </div>
+                            <div class="project-content">
+                                <h3 class="project-title">Master Mind Game</h3>
+                                <p class="project-description">
+                                    A classic code-breaking game that focuses on pattern recognition and logic.
+                                    Players make strategic guesses to deduce the hidden color sequence, then use
+                                    feedback to narrow down possibilities. This project emphasizes game rules,
+                                    UI clarity, and clean win/lose handling.
+                                </p>
+                                <div class="project-tags">
+                                    <span class="project-tag">JavaScript</span>
+                                    <span class="project-tag">Game Logic</span>
+                                    <span class="project-tag">UI/UX</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation Dots -->
+                    <div class="carousel-dots" id="carouselDots"></div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Experience Section -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title">
+                    Experience <span class="gradient-text">Timeline</span>
+                </h2>
+
+                <div class="experience-layout">
+                    <!-- Timeline -->
+                    <div class="timeline">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                            </div>
+                            <div class="timeline-date">Dec 2025 — Present</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Web Developer</h3>
+                                <div class="timeline-company">The Student Dorm</div>
+                                <p class="timeline-description">
+                                Currently a web developer full time at The Student Dorm, 
+                                working on building and maintaining web applications to enhance user experience and streamline operations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                            </div>
+                            <div class="timeline-date">Oct 2025 — Dec 2025</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Technical Intern</h3>
+                                <div class="timeline-company">The Student Dorm</div>
+                                <p class="timeline-description">
+                                As a Frontend Developer at The Student Dorm, 
+                                I built and maintained responsive web applications while optimizing site performance. 
+                                I focused on implementing technical solutions, resolving frontend bugs, and executing code updates based on feedback to streamline operations and enhance the user experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 3 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                                </svg>
+                            </div>
+                            <div class="timeline-date">Jul 2023 — Sep 2023</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Data Administrator Internship</h3>
+                                <div class="timeline-company">CTG</div>
+                                <p class="timeline-description">
+                                    Organized high volumes of customer documents using clear naming conventions and folder structures. 
+                                    Corrected inconsistencies to keep client records accurate and up to date. 
+                                    Used Microsoft Excel to automate repetitive tasks and streamline daily workflows.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 4 -->
+                        <div class="timeline-item">
+                            <div class="timeline-marker">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="7" width="20" height="14" rx="2"></rect>
+                                    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
+                                </svg>
+                            </div>
+                            <div class="timeline-date">Jun 2023 — Jul 2023</div>
+                            <div class="timeline-content">
+                                <h3 class="timeline-title">Recruiter Intern</h3>
+                                <div class="timeline-company">LonAdd HR Consultants</div>
+                                <p class="timeline-description">
+                                    Sorted and categorized candidate CVs to speed up shortlisting.
+                                    Maintained a digital filing system to improve recruiter access to profiles.
+                                    Ensured accurate, consistent records while handling high-volume applicant data.
+                                    Supported day-to-day recruitment workflows with strong organization and attention to detail.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CV Side Panel -->
+                    <aside class="cv-side">
+                        <h3 class="cv-side-title">View My CV</h3>
+                        <p class="cv-side-text">
+                            If you want to have a look at my CV for more, click the button below.
+                        </p>
+                        <!-- Update href to your real PDF location -->
+                        <a class="btn btn-primary" href="Images\CV.pdf" target="_blank" rel="noopener noreferrer">
+                            View CV
+                        </a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <!-- Section Title -->
+                <h2 class="section-title">
+                    Let's <span class="gradient-text">Connect</span>
+                </h2>
+
+                <!-- Description -->
+                <p class="contact-description">
+                    I'm always open to discussing new projects and opportunities.
+                </p>
+
+                <!-- Contact Layout (Two Columns) -->
+                <div class="contact-layout">
+                    <!-- Left Side: Contact Info -->
+                    <div class="contact-info">
+                        <h3 class="contact-info-title">Get In Touch</h3>
+                        <p class="contact-info-text">
+                            Feel free to reach out for collaborations or just a friendly hello.
+                        </p>
+
+                        <div class="contact-detail">
+                            <a class="contact-link" href="mailto:girmasimon95@gmail.com">girmasimon95@gmail.com</a>
+                        </div>
+
+                        <div class="contact-detail">
+                            <a class="contact-link" href="https://github.com/Sgg2005" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+
+                        <div class="contact-detail">
+                            <a class="contact-link" href="https://www.linkedin.com/in/simon-girma/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Contact Form -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <input type="text" name="name" id="contactName" placeholder="Name" class="form-input" required />
+                            <input type="email" name="email" id="contactEmail" placeholder="Email" class="form-input" required />
+                            <textarea name="message" id="contactMessage" placeholder="Message" class="form-textarea" rows="6" required></textarea>
+
+                            <p id="formStatusSuccess" class="form-status success" hidden>
+                                Message sent successfully!
+                            </p>
+                            <p id="formStatusError" class="form-status error" hidden>
+                                Something went wrong. Please try again.
+                            </p>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 Simon Getachew Girma</p>
+        </footer>
+
+        <!-- Arrow Back to home -->
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">↑</a>
+
+        <!-- Link to external JavaScript file -->
+        <script src="script.js"></script>
+        
+    </body>
+    </html>

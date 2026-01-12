@@ -67,43 +67,64 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Overlay click to close
     if (navOverlay) {
-        navOverlay.addEventListener('click', closeNav);
+    navOverlay.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+    });
     }
+
+    // Tap/click outside the menu to close (reliable on mobile)
+    document.addEventListener('pointerdown', function (e) {
+    if (!document.body.classList.contains('nav-open')) return;
+
+    const clickedLinkMenu = navLinksContainer && navLinksContainer.contains(e.target);
+    const clickedToggle = navToggle && navToggle.contains(e.target);
+
+    if (!clickedLinkMenu && !clickedToggle) {
+        closeNav();
+    }
+    }, { capture: true });
 
     // Escape key to close
     document.addEventListener('keydown', function(e) {
         if (e.key === 'Escape') closeNav();
     });
     
-    
-    // ==========================================
-    // SMOOTH SCROLL FOR NAVIGATION LINKS
-    // ==========================================
-    
-    const allNavLinks = document.querySelectorAll('.nav-link');
+    // ===============================
+    // NAV LINK HANDLER - FIXED - NO MORE DOUBLE CLICK!
+    // ===============================
+    (function () {
+    const navLinks = document.querySelectorAll('.nav-link');
 
-    allNavLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
+    function closeNavImmediate() {
+        document.body.classList.remove('nav-open');
+        if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    navLinks.forEach((link) => {
+        link.addEventListener('pointerdown', function (e) {
             const href = this.getAttribute('href');
-            const targetId = href.replace('#', '');
+            if (!href || !href.startsWith('#')) return;
+
+            const targetId = href.slice(1);
             const targetSection = document.getElementById(targetId);
-            
-            if (targetSection) {
-                // Scroll FIRST
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-                
-                // Close menu after a tiny delay
-                setTimeout(closeNav, 50);
-            }
-        });
+            if (!targetSection) return;
+
+            // Stop everything else (including overlay "click to close" timing issues)
+            e.preventDefault();
+            e.stopPropagation();
+            e.stopImmediatePropagation();
+
+            closeNavImmediate();
+
+            // Scroll on the next frame (after class change applies)
+            requestAnimationFrame(() => {
+                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        }, { capture: true }); // CAPTURE is important
     });
-    
-    
+})();
+        
     // ==========================================
     // FADE-IN ANIMATION ON SCROLL
     // ==========================================
@@ -270,12 +291,15 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
     // ==========================================
-    // BUTTON CLICK EFFECTS
+    // BUTTON CLICK EFFECTS - FIXED TO EXCLUDE NAV LINKS!
     // ==========================================
     
     const buttons = document.querySelectorAll('.btn');
     
     buttons.forEach(button => {
+        // Skip nav links completely!
+        if (button.classList.contains('nav-link')) return;
+        
         button.addEventListener('click', function(e) {
             const ripple = document.createElement('span');
             const rect = this.getBoundingClientRect();
