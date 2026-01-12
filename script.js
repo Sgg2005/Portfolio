@@ -124,6 +124,40 @@ document.addEventListener('DOMContentLoaded', function() {
         }, { capture: true }); // CAPTURE is important
     });
 })();
+
+    // ==========================================
+    // ACTIVE NAV LINK ON SCROLL + CLICK
+    // ==========================================
+
+    const sectionsForNav = document.querySelectorAll('section');
+    const navLinksForNav = document.querySelectorAll('.nav-link');
+
+    function updateActiveNav() {
+        let currentSection = '';
+
+        sectionsForNav.forEach(section => {
+            const sectionTop = section.offsetTop - 150;
+            const sectionHeight = section.offsetHeight;
+
+            if (window.scrollY >= sectionTop &&
+                window.scrollY < sectionTop + sectionHeight) {
+                currentSection = section.id;
+            }
+        });
+
+        navLinksForNav.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+
+    // Run on scroll
+    window.addEventListener('scroll', updateActiveNav);
+
+    // Run once on load
+    updateActiveNav();
         
     // ==========================================
     // FADE-IN ANIMATION ON SCROLL
