@@ -40,19 +40,41 @@ body {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 2rem;
+    padding: 0.5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* BIG on desktop */
     font-weight: bold;
     background: linear-gradient(90deg, #60a5fa 0%, #06b6d4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    white-space: nowrap;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 1.3rem;
+    }
+}
+
+/* Small screens (mobile landscape) */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.1rem;
+    }
+}
+
+/* Very small screens (mobile portrait) */
+@media (max-width: 520px) {
+    .logo {
+        font-size: 0.9rem;
+    }
 }
 
 .nav-links {
